@@ -10,3 +10,92 @@
 	To accomplish this, we use something called a while loop. It checks to see if a certain condition is true, and while it is, the loop keeps running. As soon as the condition stops 
 	being true, the loop stops!
 
+script.rb
+---------
+counter = 1
+while counter < 11
+  puts counter
+  counter = counter + 1
+end
+
+===================================================================================================================================================================
+
+* Danger: Infinite Loops!
+-------------------------
+	Did you see that? The loop printed out the numbers 1 to 10, then stopped. This was because the loop’s condition said to continue while counter was less than 11; since counter went 
+	up by 1 each time through the loop, the loop stopped when counter hit 11.
+
+	What if we’d forgotten to increment counter? It would have stayed at 1, the loop would have kept checking to see if it was less than 11 (and 1 is always less than 11), and the 
+	loop would never have ended. This is called an infinite loop and it will cause your programs to crash. Avoid them at all costs!
+
+script.rb
+---------
+i = 0
+while i < 5
+  puts i
+  # Add your code here!
+  i += 1
+end
+
+===================================================================================================================================================================
+
+* The 'Until' Loop
+------------------
+	The complement to the while loop is the until loop. It’s sort of like a backward while:
+
+		i = 0
+		until i == 6
+  		i = i + 1
+		end
+		puts i
+
+	1. In the example above, we first create a variable i and set it to 0 (zero).
+
+	2. Then we execute a block of code until i is equal to 6. That block of code increments i.
+	
+	3. When i is equal to 6, the block ends.
+
+	4. Finally, we print 6, the value of i, to the console.
+
+script.rb
+---------
+counter = 1
+until counter > 10
+  puts counter
+  # Add code to update 'counter' here!
+  counter += 1
+end
+
+==================================================================================================================================================================
+
+* More Assignment Operators
+---------------------------
+	We’ve been using syntax like counter = counter + 1, which works, but as you’ll increasingly find with Ruby, there’s always another way.
+
+	A shortcut is to use an assignment operator. You already know one assignment operator: =, which sets a variable. You can update a variable with additional assignment operators, 
+	however, which include +=, -=, *=, and /=. For instance, when you type
+
+		counter += 1
+
+	You’re telling Ruby: “Add 1 to counter, then assign that new value back to counter.” This provides a succinct way of updating variable values in our programs.
+
+	Some languages have the increment operators ++ and -- (which also add or subtract 1 from a value), but Ruby does not. You’ll have to make do with += and -=!
+
+==================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
