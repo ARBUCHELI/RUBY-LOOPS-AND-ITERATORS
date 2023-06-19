@@ -81,8 +81,21 @@ end
 
 	Some languages have the increment operators ++ and -- (which also add or subtract 1 from a value), but Ruby does not. You’ll have to make do with += and -=!
 
+script.rb
+---------
+counter = 1
+while counter < 11
+  puts counter
+  counter += 1
+end
+
 ==================================================================================================================================================================
 
+* The 'For' Loop
+----------------
+	Sometimes you do know how many times you’ll be looping, however, and when that’s the case, you’ll want to use a for loop.
+
+==================================================================================================================================================================
 
 
 
