@@ -1,3 +1,5 @@
-puts text = gets.chomp
+puts "Enter some text: "
+text = gets.chomp
 
-puts redact = gets.chomp
+puts "Enter words to redact: "
+redact = gets.chomp
